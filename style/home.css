@@ -108,8 +108,8 @@ z-index: 10;
         #belowHeader .projectContainer img{
          width:50%;    
         }
-
-.sectionheader{
-
-}
+        #belowHeader #THON img{
+            margin-bottom: 100px;        
+        }
+       
    

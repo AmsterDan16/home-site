@@ -15,8 +15,8 @@
             </table>
         </div>
         <div  id="aboutContainer">
-            <img id="propic" src="img/homepagepic.png"/><br/>
-            <p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p>
+            <div class="picContainer"><img id="propic" src="img/homepagepic.png"/></div><br/>
+            <div class="pContainer"><p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p></div>
         </div>
         <div id="belowHeader">
 <!--
@@ -37,7 +37,7 @@
                 <br/>
                 <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor.</p>
             </div>
-            <div class="projectContainer">
+            <div class="projectContainer" id="THON">
                 <img class="projImg" src="img/THONlogo.png">
                 <p class="projTitle"><b>Technology Captain/THINK Developer</b></p>
                 <br/>
@@ -52,20 +52,14 @@
         </div>
     </body>
 </html>
-<script>
-    var aboutContainer = document.getElementById("aboutContainer");
-    var picture = document.getElementById("propic");
-    var introParagraph = document.getElementById("introP");
+<script type="text/javascript">
+
     window.addEventListener('scroll', function(){
-        if( window.scrollY > 100 ){
-            $("#propic").animate({ opacity: 0 });
-        }else{
-            $("#propic").animate({ opacity: 1 });
-        }
-        if(window.scrollY > 260)
-            $("#introP").animate({ opacity: 0 });
-        else
-            $("#introP").animate({ opacity: 1 });
+        var currentPos = $(this).scrollTop();
+        var picturePos = 200;
+        var paragraphPos = 420;
+        $('.picContainer').css({'opacity' : (1 - currentPos/picturePos)});
+        $('.pContainer').css({'opacity' : (1 - currentPos/paragraphPos)});
     });
     
 </script>
