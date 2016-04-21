@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://127.0.0.1:53433/home.html",//"http://localhost/home.html",
+			"webRoot": "/Users/dconns11/Desktop/HTML:CSS/2016Site/",
+			//"runtimeExecutable": "${execPath}",
+			// "args": [
+			// 	"--extensionDevelopmentPath=${workspaceRoot}"
+			// ],
+			//"stopOnEntry": false,
+			"sourceMaps": true
+			//"outDir": "out",
+			//"preLaunchTask": "npm"
+		},
+		{
+			"name": "Launch index.html (without sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "file": "/Users/dconns11/Desktop/HTML:CSS/2016Site/home.html"
+		}
+	]
+}
