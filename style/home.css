@@ -1,0 +1,115 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-family: sans-serif;
+}
+
+#frozenHeader{
+background-color: #ffffff;
+/*visibility:hidden;*/
+height:120px;
+position:fixed;
+width:220px;
+z-index: 10;
+}
+    #frozenHeader h1{
+     color:#000000;
+     font-size:27px;
+     padding: 10px;
+     padding-right: 20px;
+     float:left;
+    }
+    #frozenHeader #resumeLink{
+     height:50px;
+     width:200px;
+     position: relative;
+     left: 10px;
+     color:#000000;
+     float:left;
+     border-bottom: 1px solid #000000;
+     border-top:1px solid #000000;
+     font-size:16px;
+     text-decoration: none;
+     text-align:center;
+    }
+        #frozenHeader #resumeLink span{
+         line-height: 50px;
+        }
+/*
+    #frozenHeader #aboutDiv{
+     top:-15px;
+     position: relative;
+     width:130px;
+     height:50px;
+     float:left;
+     line-height:50px;
+     border-bottom:1px solid #000000;
+     text-align: center;
+    }
+*/
+.menuItem:hover{
+ background-color:lightgray;
+}
+
+/*
+.popbox{
+ display:none;
+ position: absolute;
+ z-index:999;
+ -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+ box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+}
+*/
+#aboutContainer{
+ opacity:0.9;
+ position: relative;
+ float: left;
+ left:10px;
+ top:120px;
+}
+    #aboutContainer img{
+     width:200px;
+     margin: 0 auto;
+    }
+    #aboutContainer p{
+     width:200px;
+     padding-bottom: 20px;
+     font-size: 15px;
+    }
+
+#belowHeader{
+ text-align: center;
+ margin-bottom: 200px;
+ margin-top:10px;
+}
+    #belowHeader > h1{
+     width:70%;
+     position: relative;
+     float:right;
+     font-size:30px;
+     right:20px;
+     text-align: center;
+     margin: 0 auto;
+    }
+    #belowHeader .projectContainer{
+     width: 70%;
+     height:470px;
+     box-shadow: 1px 1px 1px 1px;
+     position: relative;
+     display: block;
+     float: right;
+     right:20px;
+    }
+        #belowHeader .projectContainer img{
+         width:50%;    
+        }
+
+.sectionheader{
+
+}
+   

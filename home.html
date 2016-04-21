@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/home.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon(5).ico"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <title>Dan Connor</title>
+    </head>
+    <body>
+        <div id="frozenHeader">
+            <table>
+                <tr><td><h1>Dan Connor</h1></td></tr>
+                <tr><td><a class="menuItem" id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a></td></tr>
+<!--                <div class="menuItem" id="aboutDiv" popbox="aboutPopupContainer">About Me</div></td></tr>-->
+            </table>
+        </div>
+        <div  id="aboutContainer">
+            <img id="propic" src="img/homepagepic.png"/><br/>
+            <p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p>
+        </div>
+        <div id="belowHeader">
+<!--
+            <div id="pittDesc">
+                <span><b>Education</b> <br/>B.S. Computer Science <br/> Penn State University</span><br/><br/>
+                <span><b>Current Location</b><br/> Pittsburgh</span><br/>
+                
+            </div>
+            <img src="images/burgh.JPG">
+            <br/><br/><br/><br/><br/>
+-->
+            <h1 class="sectionHeader">Work</h1>
+            <br/><br/>
+<!--            <h3>Coming soon...</h3>-->
+            <div class="projectContainer">
+                <img class="projImg" src="img/PPGlogo.png">
+                <p class="projTitle"><b>Programmer Analyst II</b></p>
+                <br/>
+                <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor.</p>
+            </div>
+            <div class="projectContainer">
+                <img class="projImg" src="img/THONlogo.png">
+                <p class="projTitle"><b>Technology Captain/THINK Developer</b></p>
+                <br/>
+                <p class="projDescription">Worked in a small team providing PHP web applications and technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p>
+            </div>
+<!--
+            <div class="projectContainer">
+                MORE COMING SOON...
+            </div>
+-->
+            
+        </div>
+    </body>
+</html>
+<script>
+    var aboutContainer = document.getElementById("aboutContainer");
+    var picture = document.getElementById("propic");
+    var introParagraph = document.getElementById("introP");
+    window.addEventListener('scroll', function(){
+        if( window.scrollY > 100 ){
+            $("#propic").animate({ opacity: 0 });
+        }else{
+            $("#propic").animate({ opacity: 1 });
+        }
+        if(window.scrollY > 260)
+            $("#introP").animate({ opacity: 0 });
+        else
+            $("#introP").animate({ opacity: 1 });
+    });
+    
+</script>
