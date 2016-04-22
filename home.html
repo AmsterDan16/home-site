@@ -32,17 +32,31 @@
             <br/><br/>
 <!--            <h3>Coming soon...</h3>-->
             <div class="projectContainer">
-                <img class="projImg" src="img/PPGlogo.png">
-                <p class="projTitle"><b>Programmer Analyst II</b></p>
-                <br/>
-                <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor.</p>
+                <div class="projInfo">
+                    <p class="projTitle"><b>Programmer Analyst II</b> at PPG Industries</p>
+                </div>
+                <div class="projImgContainer">
+                    <img class="projImg" src="img/PPGlogo.png">
+                </div>
+                <div "projDetails" style="display:none;">
+                    <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor.</p>
+               </div>
+                <button class="moreButton" id="test">
+                    <div class="mbContainer">
+                        <span>MORE</span><br/>
+                        <svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                            <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
+                        </svg>
+                        <!--<div class="moreArrow"></div>-->
+                    </div>
+                </button>
             </div>
-            <div class="projectContainer" id="THON">
+            <!--<div class="projectContainer" id="THON">
                 <img class="projImg" src="img/THONlogo.png">
                 <p class="projTitle"><b>Technology Captain/THINK Developer</b></p>
                 <br/>
                 <p class="projDescription">Worked in a small team providing PHP web applications and technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p>
-            </div>
+            </div>-->
 <!--
             <div class="projectContainer">
                 MORE COMING SOON...
@@ -60,6 +74,13 @@
         var paragraphPos = 420;
         $('.picContainer').css({'opacity' : (1 - currentPos/picturePos)});
         $('.pContainer').css({'opacity' : (1 - currentPos/paragraphPos)});
+    });
+    document.getElementById('test').addEventListener('click',function(){
+        var sibs = this.parentNode.childNodes;
+        var parent = this.parentNode;
+        sibs[2].classList.add('moveLogo');
+        //this.previousSibling.slideToggle();//classList.add('expandingProj'); 
+        
     });
     
 </script>
