@@ -100,18 +100,30 @@ z-index: 10;
     #belowHeader .projectContainer{
      width: 60%;
      position: relative;
-     display: block;
+     
      float: right;
      margin-right:10%;
-     height:100px;
-     padding-bottom:100px;
-     border-bottom: 1px dotted lightgray;
+     height:100%;
+     padding-bottom:10px;
+     
     }
+        #belowHeader #topProject{
+            border-top:1px dotted lightgray;   
+        }
         #belowHeader .projectContainer .projTitle{
             font-size:20px;
             text-align: center;
             float:left;
             line-height: 100px;
+            
+        }
+        #belowHeader .projectContainer .projDuration{
+            font-size:17px;
+            clear:right;
+            float:left;
+            width:100%;
+            text-align: left;
+            margin-bottom:20px;
         }
         #belowHeader .projectContainer .projImgContainer{
            float:right;
@@ -120,12 +132,39 @@ z-index: 10;
                 width:200px;
             }
         #belowHeader .projectContainer .projDetails{
-           height:100px;
+           /*visibility: hidden;*/
+           /*border-bottom: 1px dotted lightgray;*/
+           width:100%;
+          
+           text-align: justify;
+           text-justify: left;
+           position: relative;
+           top:0px;
+           height:0px;
+           overflow: hidden;
+           -webkit-transition:height, 0.25s linear;
+           -moz-transition: height, 0.25s linear;
+           -ms-transition: height, 0.25s linear;
+           -o-transition: height, 0.25s linear;
+           transition: height, 0.25s linear;
         }
+            #belowHeader .projectContainer .projDetails.expandDetails{
+            /*visibility: visible;*/
+            /*border-bottom: 1px dotted lightgray;*/
+            width:100%;
+            height:auto;
+            -webkit-transition:height, 0.25s linear;
+            -moz-transition: height, 0.25s linear;
+            -ms-transition: height, 0.25s linear;
+            -o-transition: height, 0.25s linear;
+            transition: height, 0.25s linear;
+            }
+
         #belowHeader .projectContainer .moreButton{
             position:relative;
             width:100%;
             padding-top:5px;
+            border-bottom: 1px dotted lightgray;
         }
             #belowHeader .projectContainer .moreButton:hover{
                 background-color: lightgray;
@@ -146,11 +185,17 @@ z-index: 10;
             margin-bottom: 100px;        
         }*/
 .moveLogo{
-    transform: translate(-200, 50);
-    transition:transform 1s;
+    transform: translate(-275px, 0px);
+    transition:translate 2s linear;
+    display:block;
     /*animation-name:expand;
     animation-duration: 1s;
     animation-iteration-count: 1;*/
+}
+
+.flip{
+    transform: rotate(180deg);
+    transition: rotate 0ms;
 }
 
 

@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="style/home.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon(5).ico"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
         <title>Dan Connor</title>
     </head>
     <body>
@@ -30,57 +31,63 @@
 -->
             <h1 class="sectionHeader">Work</h1>
             <br/><br/>
-<!--            <h3>Coming soon...</h3>-->
-            <div class="projectContainer">
+            <div class="projectContainer" id="topProject">
                 <div class="projInfo">
                     <p class="projTitle"><b>Programmer Analyst II</b> at PPG Industries</p>
+                    
                 </div>
                 <div class="projImgContainer">
                     <img class="projImg" src="img/PPGlogo.png">
-                </div>
-                <div "projDetails" style="display:none;">
-                    <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor.</p>
+                </div><br/>
+                <p class="projDuration">06/2015 - PRESENT</p>
+                <div class="projDetails">
+                    <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor. Aside from software development, I was also the system administrator for the business's Microsoft CRM system during a time when the company was beginning to adopt system at a rapid pace. This meant meetings with users from all parts of the business to discuss and then implement projects of a wide array to suit the business's needs.</p>
                </div>
-                <button class="moreButton" id="test">
-                    <div class="mbContainer">
-                        <span>MORE</span><br/>
-                        <svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                <button class="moreButton">
+                        <span class="expandBtnText">MORE</span><br/>
+                        <!--<svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
                             <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
-                        </svg>
-                        <!--<div class="moreArrow"></div>-->
-                    </div>
-                </button>
+                        </svg>-->
+                </button> 
             </div>
-            <!--<div class="projectContainer" id="THON">
-                <img class="projImg" src="img/THONlogo.png">
-                <p class="projTitle"><b>Technology Captain/THINK Developer</b></p>
-                <br/>
-                <p class="projDescription">Worked in a small team providing PHP web applications and technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p>
-            </div>-->
-<!--
+            <div class="projectContainer" id="THON">
+                <div class="projInfo">
+                    <p class="projTitle"><b>Technology Captain</b> at Penn State THON</p>
+                    
+                </div>
+                <div class="projImgContainer">
+                    <img class="projImg" src="img/THONlogo.png">
+                </div><br/>
+                <p class="projDuration">04/2014 - 04/2015</p>
+                <div class="projDetails">
+                    <p class="projDescription">Developed and maintained PHP web applications and provided technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p>
+               </div>
+                <button class="moreButton">
+                        <span class="expandBtnText">MORE</span><br/>
+                </button> 
+            </div>
             <div class="projectContainer">
-                MORE COMING SOON...
+                <div class="projInfo">
+                    <p class="projTitle"><b>IT Intern</b> at PPG Industries</p>
+                    
+                </div>
+                <div class="projImgContainer">
+                    <img class="projImg" src="img/PPGlogo.png">
+                </div><br/>
+                <p class="projDuration">05/2014 - 08/2014</p>
+                <div class="projDetails">
+                    <p class="projDescription">Completed the transformation of a C# MVC web app into a fully responsive web app with several additional features. I then converted it into a standalone native application for all major phones using Cordova PhoneGap.</p>
+               </div>
+                <button class="moreButton">
+                        <span class="expandBtnText">MORE</span><br/>
+                        <!--<svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                            <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
+                        </svg>-->
+                </button> 
             </div>
--->
+
             
         </div>
     </body>
+    <script src="/js/pages/home.js" type="text/javascript"></script>
 </html>
-<script type="text/javascript">
-
-    window.addEventListener('scroll', function(){
-        var currentPos = $(this).scrollTop();
-        var picturePos = 200;
-        var paragraphPos = 420;
-        $('.picContainer').css({'opacity' : (1 - currentPos/picturePos)});
-        $('.pContainer').css({'opacity' : (1 - currentPos/paragraphPos)});
-    });
-    document.getElementById('test').addEventListener('click',function(){
-        var sibs = this.parentNode.childNodes;
-        var parent = this.parentNode;
-        sibs[2].classList.add('moveLogo');
-        //this.previousSibling.slideToggle();//classList.add('expandingProj'); 
-        
-    });
-    
-</script>
