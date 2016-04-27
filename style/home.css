@@ -358,9 +358,6 @@ z-index: 10;
         width:100%;
         z-index: 10;
     }
-        #frozenHeader table{
-            width:100%;
-        }
         #frozenHeader h1{
             color:#ffffff;
             font-size:22px;
@@ -371,7 +368,7 @@ z-index: 10;
         }
         #frozenHeader #resumeLink{
             height:50px;
-            width:200px;
+            width:auto;
             color:#ffffff;
             float:right;
             font-size:16px;
