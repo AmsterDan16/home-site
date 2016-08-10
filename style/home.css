@@ -54,16 +54,16 @@ z-index: 10;
      width:200px;
      position: relative;
      left: 10px;
-     color:#000000;
-     background-color: #defbff;
+     color:#ffffff;
+     background-color: #6785c9;/*#defbff;*/
      float:left;
-     border: 1px solid #defbff;
+     border: 1px solid #6785c9;
      font-size:16px;
      text-decoration: none;
      text-align:center;
     }
         #frozenHeader #resumeLink:hover{
-         background-color:#ffffff;
+         background-color:#355295;
         }
         #frozenHeader #resumeLink span{
          line-height: 50px;
@@ -90,7 +90,7 @@ z-index: 10;
  float: left;
  left:40px;
  top:120px;
- border:1px solid #defbff;
+ border:1px solid #ffffff;
 }
     #aboutContainer img{
      width:200px;
@@ -180,12 +180,13 @@ z-index: 10;
         #belowHeader .projectContainer .moreButton{
             position:relative;
             padding:10px;
+            color:#ffffff;
             border: 1px dotted lightgray;
-            background-color:#defbff;
+            background-color:#6785c9;
             float:left;
         }
             #belowHeader .projectContainer .moreButton:hover{
-                background-color: #ffffff;
+                background-color: #355295;
             }
             /*#belowHeader .projectContainer .moreButton .moreArrow{
                 width:0;
@@ -347,9 +348,15 @@ z-index: 10;
         #belowHeader .projectContainer .moreButton{
             position:relative;
             width:100%;
-            padding-top:5px;
+            padding-top:10px;
+            padding-bottom:10px;
             border: 1px dotted lightgray;
-            
+            background-color: #6785c9;
+            color: #ffffff;
+        }
+
+            #belowHeader .projectContainer .moreButton:hover{
+            background-color: #355295;
         }
 
 }
