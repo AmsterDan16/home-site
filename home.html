@@ -8,20 +8,47 @@
         <title>Dan Connor</title>
     </head>
     <body>
-        <div id="frozenHeader">
+        <!--<div id="frozenHeader">
             <h1>Dan Connor</h1>
             <a class="menuItem" id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a>
+        </div>-->
+        <div id="resumeContainer">
+            <a id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank">
+                <div id="resume">
+                    <span>RESUME</span>
+                </div>
+            </a>
         </div>
-        <div  id="aboutContainer">
-            <div class="picContainer"><img id="propic" src="img/homepagepic.png"/></div><br/>
-            <div class="pContainer">
-                <p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p>
-            </div>
-        </div>
-        <div id="belowHeader">
+        <div id="belowAbout">
             <h1 class="sectionHeader">Work</h1>
             <br/><br/>
             <div class="projectContainer" id="topProject">
+                <div class="projInfo">
+                    <p class="projTitle"><b>Listbuilder</p>
+                    
+                </div>
+                <div class="projImgContainer">
+                    <img class="projImg" src="">
+                </div><br/>
+                <p class="projDuration"></p>
+                <div class="projDetails">
+                    <p class="projDescription">A simple list builder app built using Angular.js<br />
+                    <a class="projLink" target="blank" href="http://www.danconnor.me/listbuilder/index.html">Test it out</a></p>
+                    <br />
+                    <p>Technologies used:</p>
+                    <ul class="techList">
+                        <li>Angular.js</li>
+                        <li>HTML, CSS, Javascript</li>
+                    </ul>
+            </div>
+                <button class="moreButton">
+                        <span class="expandBtnText">MORE</span><br/>
+                        <!--<svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                            <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
+                        </svg>-->
+                </button> 
+            </div>
+            <div class="projectContainer" id="PPG">
                 <div class="projInfo">
                     <p class="projTitle"><b>Programmer Analyst II &amp; I</b> at PPG Industries</p>
                     
@@ -73,7 +100,7 @@
                         <span class="expandBtnText">MORE</span><br/>
                 </button> 
             </div>
-            <div class="projectContainer">
+            <div class="projectContainer" id="PPGIntern">
                 <div class="projInfo">
                     <p class="projTitle"><b>IT Intern</b> at PPG Industries</p>
                     
@@ -96,7 +123,16 @@
                 <button class="moreButton">
                      <span class="expandBtnText">MORE</span><br/>
                 </button> 
-            </div>   
+            </div>  
+            <div  id="aboutContainer">
+                <h2>About</h2>
+                <div class="picContainer"><img id="propic" src="img/homepagepic.png"/></div><br/>
+                
+                <a class="menuItem" id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a>
+                <div class="pContainer">
+                    <!--<p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p>-->
+                </div>
+            </div> 
         </div>
     </body>
     <script src="/js/pages/home.js" type="text/javascript"></script>
