@@ -1,18 +1,59 @@
 *{
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-font-size: 100%;
-vertical-align: baseline;
-background: transparent;
-font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
 }
-#resumeContainer{
-    height:250px;
+p{
+    color:#837B7B;
+}
+#frozenHeader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:65px;
+    z-index:999;
+}
+    #frozenHeader #headerContent{
+        width:25%;
+        margin:0 auto;
+        position:relative;
+        bottom:4em;
+    }
+        #frozenHeader #headerContent h1{
+            width:50%;
+            float:left;
+            line-height:3em;
+            font-size:1.4em;
+        }
+        #frozenHeader #headerContent a{
+            margin-top:0.5em;
+            width:50%;
+            float:right;
+            background-color:#3cb8f3;
+            height:3em;
+            color:#ffffff;
+            text-decoration:none;
+            text-align:center;
+            line-height:3em;
+            border-radius:0.3em;
+        }
+    #frozenHeader #opaqueBar{
+        background-color:black;
+        opacity:0.25;
+        height:65px;
+    }
+/*#resumeContainer{
+    height:300px;
 }
 #resumeLink{
-    margin-top:120px;
+    position:relative;
+    top:120px;
     text-decoration:none;
     font-size:16px;
 }
@@ -25,24 +66,28 @@ font-family: sans-serif;
     text-align:center;
     line-height:50px;
     border-radius:5px;
-}
+}*/
 #belowAbout{
     position:relative;
-    margin-top:200px;
+    margin-top:10em;
 }
 .projectContainer{
-    border-bottom:3px solid #000000;
+    height:26em;
+    padding-left:3em;
+    /*border-top:1px solid #bce7fb;
+    border-bottom:1px solid #bce7fb;*/
 }
 .projImgContainer{
     width:40%;
     margin:0 auto;
     max-width:300px;
+ 
 }
 .projImg{
     width:100%;
 }
-#PPG{
-    background-color:
+.projTitle{
+    font-size:2em;
 }
 /*#belowHeader .projectContainer .projDetails{
     width:100%;
