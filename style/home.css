@@ -6,7 +6,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 p{
     color:#837B7B;
@@ -34,522 +34,144 @@ p{
         #frozenHeader #headerContent a{
             margin-top:0.5em;
             width:50%;
-            float:right;
-            background-color:#3cb8f3;
-            height:3em;
-            color:#ffffff;
-            text-decoration:none;
-            text-align:center;
-            line-height:3em;
-            border-radius:0.3em;
+            float:right; 
         }
     #frozenHeader #opaqueBar{
         background-color:black;
-        opacity:0.25;
+        opacity:0.20;
         height:65px;
     }
-/*#resumeContainer{
-    height:300px;
-}
-#resumeLink{
-    position:relative;
-    top:120px;
-    text-decoration:none;
-    font-size:16px;
-}
-#resume{
-    width:175px;
-    height:50px;
-    margin:0 auto;
+.buttonExternal{
     background-color:#3cb8f3;
+    height:3em;
     color:#ffffff;
+    text-decoration:none;
     text-align:center;
-    line-height:50px;
-    border-radius:5px;
-}*/
-#belowAbout{
+    line-height:3em;
+    border-radius:0.3em;
+}
+#belowHeader{
     position:relative;
-    margin-top:10em;
+    width:80%;
+    margin:0 auto;
+    margin-top:8em;
+}
+#sectionHeader{
+    font-size:2.5em;
+    margin-left:0.5em;
+    margin-bottom:1em;
+    width:30%;
+    border-bottom:1px dotted #837b7b;
 }
 .projectContainer{
-    height:26em;
-    padding-left:3em;
-    /*border-top:1px solid #bce7fb;
-    border-bottom:1px solid #bce7fb;*/
+    margin-top:1em;
+    margin-bottom:5em;
+    padding-left:1em;
+    border-bottom:1px dotted #837b7b;
+    padding-bottom:2em;
+}
+.bottomProject{
+    border-bottom:0px;
 }
 .projImgContainer{
     width:40%;
     margin:0 auto;
-    max-width:300px;
- 
+    max-width:300px; 
 }
 .projImg{
     width:100%;
 }
 .projTitle{
-    font-size:2em;
+    font-size:1.7em;
+    margin-bottom:1em;
 }
-/*#belowHeader .projectContainer .projDetails{
-    width:100%;
-    text-align: justify;
-    text-justify: left;
-    position: relative;
-    top:0px;
-    max-height:0px;
-    overflow: hidden;
-    -webkit-transition:max-height, 0.4s;
-    -moz-transition: max-height, 0.4s;
-    -ms-transition: max-height, 0.4s;
-    -o-transition: max-height, 0.4s;
-    transition: max-height, 0.4s;
+.projDetails{
+    padding-left:1em;
+    font-size:1.2em;
 }
-    #belowHeader .projectContainer .projDetails.expandDetails{
-    width:100%;
-    max-height:500px;
-    -webkit-transition:max-height, 0.4s;
-    -moz-transition: max-height, 0.4s;
-    -ms-transition: max-height, 0.4s;
-    -o-transition: max-height, 0.4s;
-    transition: max-height, 0.4s;
-    }
 .projLink{
-    text-decoration-style: none;
-    color:#6785c9;
+    padding:1em;
+    position:relative;
+    top:1em;
 }
-    .projLink:hover{
-        color:#65B1F0;
-    }
-@media screen and (min-width:1024px){
-#frozenHeader{
-background-color: #ffffff;
-
-height:120px;
-position:fixed;
-top:0;
-left:30px;
-width:220px;
-z-index: 10;
+.techList{
+    padding-left:2em;
 }
-    #frozenHeader h1{
-     color:#000000;
-     font-size:27px;
-     padding: 10px;
-     padding-right: 20px;
-     float:left;
+    .techList li{
+        color:#837b7b;
     }
-    #frozenHeader #resumeLink{
-     height:50px;
-     width:200px;
-     position: relative;
-     left: 10px;
-     color:#ffffff;
-     background-color: #6785c9;
-     float:left;
-     border: 1px solid #6785c9;
-     font-size:16px;
-     text-decoration: none;
-     text-align:center;
-    }
-        #frozenHeader #resumeLink:hover{
-         background-color:#355295;
-        }
-        #frozenHeader #resumeLink span{
-         line-height: 50px;
-        }
-
-.menuItem:hover{
- background-color:lightgray;
-}
-
 #aboutContainer{
- opacity:0.9;
- position: relative;
- float: left;
- left:40px;
- top:120px;
- border:1px solid #ffffff;
+    background-color:#3cb8f3;
+    padding:2em;
+    height:240px;
 }
-    #aboutContainer img{
-     width:200px;
-     margin: 0 auto;
-    }
-    #aboutContainer p{
-     width:200px;
-     padding-bottom: 20px;
-     font-size: 15px;
-    }
-
-#belowHeader{
- text-align: center;
- margin-bottom: 200px;
- margin-top:10px;
+#aboutContent{
+    width:80%;
+    margin:0 auto;
 }
-    #belowHeader > h1{
-     width:70%;
-     position: relative;
-     float:right;
-     font-size:30px;
-     right:20px;
-     text-align: center;
-     margin: 0 auto;
+    #aboutContent h2{
+        font-size:2.5em;
+        padding-bottom:0.5em;
     }
-    #belowHeader .projectContainer{
-     width: 60%;
-     position: relative;
-     float: right;
-     margin-right:10%;
-     height:100%;
-     padding-bottom:10px;
-     border-bottom:1px dotted lightgray;
-    }
-        #belowHeader #topProject{
-            border-top:1px dotted lightgray;   
-        }
-        #belowHeader .projectContainer .projTitle{
-            font-size:20px;
-            text-align: center;
-            float:left;
-            line-height: 100px;
-            
-        }
-        #belowHeader .projectContainer .projDuration{
-            font-size:17px;
-            clear:right;
-            float:left;
-            width:100%;
-            text-align: left;
-            margin-bottom:20px;
-        }
-        #belowHeader .projectContainer .projImgContainer{
-           float:right;
-        }
-            #belowHeader .projectContainer .projImgContainer img{
-                width:200px;
-            }
-        #belowHeader .projectContainer .projDetails{
-           width:100%;
-           text-align: justify;
-           text-justify: left;
-           position: relative;
-           top:0px;
-           height:0px;
-           overflow: hidden;
-           -webkit-transition:height, 0.25s linear;
-           -moz-transition: height, 0.25s linear;
-           -ms-transition: height, 0.25s linear;
-           -o-transition: height, 0.25s linear;
-           transition: height, 0.25s linear;
-        }
-            #belowHeader .projectContainer .projDetails.expandDetails{
-            width:100%;
-            height:auto;
-            -webkit-transition:height, 0.25s linear;
-            -moz-transition: height, 0.25s linear;
-            -ms-transition: height, 0.25s linear;
-            -o-transition: height, 0.25s linear;
-            transition: height, 0.25s linear;
-            }
-
-        #belowHeader .projectContainer .moreButton{
-            position:relative;
-            padding:10px;
-            color:#ffffff;
-            border: 1px dotted lightgray;
-            background-color:#6785c9;
-            float:left;
-        }
-            #belowHeader .projectContainer .moreButton:hover{
-                background-color: #355295;
-            }
- 
+#aboutPic img{
+    float:left;
+    width:15%;
+    border-radius:150px;
 }
-@media screen and (min-width:768px) and (max-width:1024px){
-    #frozenHeader{
-        background-color: #000000;
-   
-        height:60px;
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index: 10;
-    }
-        #frozenHeader table{
-            width:100%;
-        }
-        #frozenHeader h1{
-            color:#ffffff;
-            font-size:27px;
-            padding: 10px;
-            padding-right: 20px;
-            float:left;
-            width:auto;
-        }
-        #frozenHeader #resumeLink{
-            height:50px;
-            width:200px;
-            color:#ffffff;
-            float:right;
-            font-size:16px;
-            text-decoration: none;
-            text-align:center;
-        }
-            #frozenHeader #resumeLink span{
-                line-height: 50px;
-            }
-    #aboutContainer{
-        width:100%;
-        margin:0 auto;
-        top:100px;
-        padding-bottom:100px;
-        position:relative;
-    }
-        #aboutContainer .picContainer{
-            width:200px;
-            margin: 0 auto;
-        }
-            #aboutContainer .picContainer img{
-                width:100%;
-            }
-        #aboutContainer .pContainer{
-            width:500px;
-            padding-bottom: 20px;
-            font-size: 15px;
-            margin:0 auto;
-            text-align: center;
-        }
-            #aboutContainer .pContainer p{
-                width:100%;
-               
-            }
-#belowHeader{
- text-align: center;
- margin-top:10px;
- width:100%;
- 
+#about{
+    float:right;
+    width:70%;
+    font-size:1.2em;
 }
-    #belowHeader > h1{
-        width:100%;
-        position: relative;        
-        font-size:30px;
-        text-align: center;
-        margin: 0 auto;
+    #about p{
+        color:#000000;
     }
-    #belowHeader .projectContainer{
-        position: relative;   
-        margin:0 auto;
-        height:100%;
-        padding-bottom:10px;
-        padding-left:20px;
-        padding-right:20px;
-    }
-        #belowHeader #topProject{
-            border-top:1px dotted lightgray;   
-        }
-        #belowHeader .projectContainer .projTitle{
-            font-size:20px;
-            text-align: center;
-            float:left;
-            line-height: 100px;
-            
-        }
-        #belowHeader .projectContainer .projDuration{
-            font-size:17px;
-            clear:right;
-            float:left;
-            width:100%;
-            text-align: left;
-            margin-bottom:20px;
-        }
-        #belowHeader .projectContainer .projImgContainer{
-           float:right;
-        }
-            #belowHeader .projectContainer .projImgContainer img{
-                width:200px;
-            }
-        #belowHeader .projectContainer .projDetails{
-           width:100%;
-          
-           text-align: justify;
-           text-justify: left;
-           position: relative;
-           top:0px;
-           height:0px;
-           overflow: hidden;
-           -webkit-transition:height, 0.25s linear;
-           -moz-transition: height, 0.25s linear;
-           -ms-transition: height, 0.25s linear;
-           -o-transition: height, 0.25s linear;
-           transition: height, 0.25s linear;
-        }
-            #belowHeader .projectContainer .projDetails.expandDetails{
-             width:100%;
-            height:auto;
-            -webkit-transition:height, 0.25s linear;
-            -moz-transition: height, 0.25s linear;
-            -ms-transition: height, 0.25s linear;
-            -o-transition: height, 0.25s linear;
-            transition: height, 0.25s linear;
-            }
-
-        #belowHeader .projectContainer .moreButton{
-            position:relative;
-            width:100%;
-            padding-top:10px;
-            padding-bottom:10px;
-            border: 1px dotted lightgray;
-            background-color: #6785c9;
-            color: #ffffff;
-        }
-
-            #belowHeader .projectContainer .moreButton:hover{
-            background-color: #355295;
-        }
-
-}
 @media screen and (max-width:768px){
-    #frozenHeader{
-        background-color: #000000;
-        height:60px;
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index: 10;
+#frozenHeader #headerContent{
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    bottom:4em;
+}
+    #frozenHeader #headerContent h1{
+        width:50%;
+        float:left;
+        line-height:3em;
+        font-size:1.4em;
+        margin-left:0.2em;
     }
-        #frozenHeader h1{
-            color:#ffffff;
-            font-size:22px;
-            padding: 10px;
-            padding-right: 20px;
-            float:left;
-            width:auto;
-        }
-        #frozenHeader #resumeLink{
-            height:50px;
-            width:auto;
-            color:#ffffff;
-            float:right;
-            font-size:16px;
-            text-decoration: none;
-            text-align:center;
-            padding-right:20px;
-        }
-            #frozenHeader #resumeLink span{
-                line-height: 50px;
-            }
-    #aboutContainer{
-        width:100%;
-        margin:0 auto;
-        top:100px;
-        padding-bottom:100px;
-        position:relative;
+    #frozenHeader #headerContent a{
+        margin-top:0.5em;
+        width:6em;
+        float:right; 
     }
-        #aboutContainer .picContainer{
-            width:150px;
-            margin: 0 auto;
-        }
-            #aboutContainer .picContainer img{
-                width:100%;
-            }
-        #aboutContainer .pContainer{
-            width:85%;
-            padding-bottom: 20px;
-            font-size: 15px;
-            margin:0 auto;
-            text-align: center;
-        }
-            #aboutContainer .pContainer p{
-                width:100%;
-               
-            }
 #belowHeader{
- text-align: center;
- margin-top:10px;
- width:100%;
+    width:95%;
 }
-    #belowHeader > h1{
-        width:100%;
-        position: relative;        
-        font-size:22px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    #belowHeader .projectContainer{
-        position: relative;   
-        margin:0 auto;
-        height:100%;
-        padding-bottom:10px;
-        padding-left:20px;
-        padding-right:20px;
-    }
-        #belowHeader #topProject{
-            border-top:1px dotted lightgray;   
-        }
-        #belowHeader .projectContainer .projTitle{
-            font-size:16px;
-            text-align: center;
-            width:100%;
-            line-height: 50px;   
-        }
-        #belowHeader .projectContainer .projDuration{
-            font-size:14px;
-            width:100%;
-            text-align: center;
-            margin-bottom:20px;
-        }
-        #belowHeader .projectContainer .projImgContainer{
-           width:100%;
-           margin:0 auto;
-        }
-            #belowHeader .projectContainer .projImgContainer img{
-                width:100px;
-            }
-        #belowHeader .projectContainer .projDetails{
-           width:100%;
-           font-size: 14px;
-           text-align: justify;
-           text-justify: left;
-           position: relative;
-           top:0px;
-           height:0px;
-           overflow: hidden;
-           -webkit-transition:height, 0.25s linear;
-           -moz-transition: height, 0.25s linear;
-           -ms-transition: height, 0.25s linear;
-           -o-transition: height, 0.25s linear;
-           transition: height, 0.25s linear;
-        }
-            #belowHeader .projectContainer .projDetails.expandDetails{
-             width:100%;
-            font-size: 14px;
-            height:auto;
-            -webkit-transition:height, 0.25s linear;
-            -moz-transition: height, 0.25s linear;
-            -ms-transition: height, 0.25s linear;
-            -o-transition: height, 0.25s linear;
-            transition: height, 0.25s linear;
-            }
-
-        #belowHeader .projectContainer .moreButton{
-            position:relative;
-            width:100%;
-            padding-top:5px;
-            border: 1px dotted lightgray;
-        }
+#aboutContainer{
+    padding:0.5em;
+    padding-bottom:10em;
 }
-
-.moveLogo{
-    transform: translate(-275px, 0px);
-    transition:translate 2s linear;
-    display:block;
-
+#aboutContent{
+    width:100%;
 }
-
-.flip{
-    transform: rotate(180deg);
-    transition: rotate 0ms;
+#aboutPic{
+    width:30%;
+    margin:0 auto;
 }
-
-
-
-       
-   */
+#aboutContent h2{
+    text-align: center;
+}
+#aboutPic img{
+    width:100%;
+    float:none;
+    border-radius:20px;
+}
+#about{
+    float:none;
+    text-align: center;
+    height:auto;
+    width:90%;
+    margin:0 auto;
+}
+}

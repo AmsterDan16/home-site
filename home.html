@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style/home.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon(5).ico"/>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dan Connor</title>
@@ -13,72 +13,67 @@
             <div id="opaqueBar"></div>
             <div id="headerContent">
                 <h1>Dan Connor</h1>
-                <a class="menuItem" id="headerResume" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a>
+                <a class="buttonExternal" id="headerResume" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a>
             </div>
         </div>
-        <!--<div id="resumeContainer">
-            <a id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank">
-                <div id="resume">
-                    <span>RESUME</span>
-                </div>
-            </a>
-        </div>-->
-        <div id="belowAbout">
-            <!--<h1 class="sectionHeader">Work</h1>
-            <br/><br/>-->
-            <div class="projectContainer" id="listBuilder">
+        <div id="belowHeader">
+            <div id="sectionHeader">
+                <h2>Projects</h2>
+            </div>
+            <div class="projectContainer bottomProject" id="listBuilder">
                 <div class="projTitle">
-                    <p><b>Listbuilder</b></p>
+                    <p>Listbuilder</p>  
+                </div>
+                <p class="projDuration"></p>
+                <div class="projDetails">
+                    <p class="projDescription">To-do list built using Angular.js</p>
+                    <a class="buttonExternal projLink" target="blank" href="http://www.danconnor.me/listbuilder/index.html">Try it out</a>
+                </div>
+            </div>
+            <div id="sectionHeader">
+                <h2>Work</h2>
+            </div>
+            <div class="projectContainer" id="vitro">
+                <div class="projInfo">
+                    <p class="projTitle">Programmer Analyst I at Vitro</p>
                     
                 </div>
                 <div class="projImgContainer">
-                    <img class="projImg" src="">
+                    <img class="projImg" src="img/VITROlogo.png">
                 </div><br/>
-                <p class="projDuration"></p>
+                
                 <div class="projDetails">
-                    <p class="projDescription">A simple list builder app built using Angular.js<br />
-                    <a class="projLink" target="blank" href="http://www.danconnor.me/listbuilder/index.html">Test it out</a></p>
+                    <p class="projDuration">October 2016 - Current</p><br/>
+                    <p class="projDescription">I gained experience in divestitures and participated in the transfer of full systems and applications from one company to another, while developing several .NET applications along the way.</p>
                     <br />
-                    <p>Technologies used:</p>
+                    <!--<p>Technologies used:</p>
                     <ul class="techList">
-                        <li>Angular.js</li>
-                        <li>HTML, CSS, Javascript</li>
-                    </ul>
-            </div>
-                <button class="moreButton">
-                        <span class="expandBtnText">MORE</span><br/>
-                        <!--<svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
-                            <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
-                        </svg>-->
-                </button> 
+                        
+                    </ul>-->
+               </div>
             </div>
             <div class="projectContainer" id="PPG">
                 <div class="projInfo">
-                    <p class="projTitle"><b>Programmer Analyst II &amp; I</b> at PPG Industries</p>
+                    <p class="projTitle">Programmer Analyst II &amp; I at PPG Industries</p>
                     
                 </div>
                 <div class="projImgContainer">
                     <img class="projImg" src="img/PPGlogo.png">
                 </div><br/>
-                <p class="projDuration">June 2015 - PRESENT</p>
+                
                 <div class="projDetails">
-                    <p class="projDescription">Worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor. Aside from software development, I was also the system administrator for the business's Microsoft CRM system during a time when the company was beginning to adopt the system at a rapid pace. This meant meeting with users from all parts of the business to discuss and then implement projects with a wide array of business functions.</p>
+                    <p class="projDuration">June 2015 - October 2016</p><br/>
+                    <p class="projDescription">I worked both in small teams and individually to design/implement .NET/SQL software solutions to solve business needs. In addition to developing new software to improve business functions, I also supported and maintained legacy applications, fixing bugs and adding features throughout. I had direct contact with customers both in external businesses and on the manufacturing plant floor. Aside from software development, I was also the system administrator for the business's Microsoft CRM system during a time when the company was beginning to adopt the system at a rapid pace. This meant meeting with users from all parts of the business to discuss and then implement projects with a wide array of business functions.</p>
                     <br />
                     <p>Technologies used:</p>
                     <ul class="techList">
-                        <li>VB.NET</li>
+                        <li>ASP.NET, Visual Basic</li>
                         <li>SQL queries, stored procedures, triggers</li>
                         <li>Microsoft Visual Studio 2010/2012</li>
                         <li>Microsoft Dynamics CRM</li>
                         <li>HTML, CSS, Javascript</li>
                     </ul>
                </div>
-                <button class="moreButton">
-                        <span class="expandBtnText">MORE</span><br/>
-                        <!--<svg width="40" height="30" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
-                            <path d="M8,0 l30,40 l30,-40" fill="none" stroke="lightgray" stroke-linecap="round" stroke-width="5" />
-                        </svg>-->
-                </button> 
             </div>
             <div class="projectContainer" id="THON">
                 <div class="projInfo">
@@ -88,9 +83,10 @@
                 <div class="projImgContainer">
                     <img class="projImg" src="img/THONlogo.png">
                 </div><br/>
-                <p class="projDuration">Apr 2014 - Apr 2015</p>
+                
                 <div class="projDetails">
-                    <p class="projDescription">Developed and maintained PHP web applications and provided technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p><br />
+                    <p class="projDuration">Apr 2014 - Apr 2015</p>
+                    <p class="projDescription">I developed and maintained PHP web applications and provided technical support for the largest student run philanthropy in the world. Projects included an inventory management and supply request system, as well as a participant medication entry system.</p><br />
                     <p>Technologies used:</p>
                     <ul class="techList">
                         <li>PHP</li>
@@ -100,11 +96,8 @@
                         <li>HTML, CSS, Javascript</li>
                     </ul>
                </div>
-                <button class="moreButton">
-                        <span class="expandBtnText">MORE</span><br/>
-                </button> 
             </div>
-            <div class="projectContainer" id="PPGIntern">
+            <div class="projectContainer bottomProject" id="PPGIntern">
                 <div class="projInfo">
                     <p class="projTitle"><b>IT Intern</b> at PPG Industries</p>
                     
@@ -112,9 +105,10 @@
                 <div class="projImgContainer">
                     <img class="projImg" src="img/PPGlogo.png">
                 </div><br/>
-                <p class="projDuration">May 2014 - Aug 2014</p>
+                
                 <div class="projDetails">
-                    <p class="projDescription">Completed the transformation of a C# MVC web app into a fully responsive web app with several additional features. I then converted it into a standalone native application for all major phones using Cordova PhoneGap.</p>
+                    <p class="projDuration">May 2014 - Aug 2014</p>
+                    <p class="projDescription">I completed the transformation of a C# MVC web app into a fully responsive web app with several additional features. I then converted it into a standalone native application for all major phones using Cordova PhoneGap.</p>
                     <br />
                     <p>Technologies used:</p>
                     <ul class="techList">
@@ -123,18 +117,15 @@
                         <li>Microsoft Visual Studio 2012</li>
                         <li>razor, HTML, CSS, Javascript</li>
                     </ul>
-               </div>
-                <button class="moreButton">
-                     <span class="expandBtnText">MORE</span><br/>
-                </button> 
+               </div> 
             </div>  
-            <div  id="aboutContainer">
+        </div>
+        <div  id="aboutContainer">
+            <div id="aboutContent">
                 <h2>About</h2>
-                <div class="picContainer"><img id="propic" src="img/homepagepic.png"/></div><br/>
-                
-                <a class="menuItem" id="resumeLink" href="otherFiles/DanConnor.pdf" target="_blank"><span>Resume</span></a>
-                <div class="pContainer">
-                    <!--<p id="introP">I'm a 23yo software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology. I'm primarily a .NET programmer with experience ranging from the database to the web page. I'm also familiar with iOS programming and am open to jumping into any language or framework.</p>-->
+                <div id="aboutPic"><img id="propic" src="img/homepagepic.png"/></div><br/>
+                <div id="about">
+                    <p>I'm a 23 year old software developer currently living in Pittsburgh, PA. I have a BS in Computer Science from Penn State University with a minor in Information Sciences and Technology.</p>
                 </div>
             </div> 
         </div>
